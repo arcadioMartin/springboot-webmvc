@@ -1,0 +1,12 @@
+---
+pipeline: "workflows/maven/CanaryReleaseAndStage/Jenkinsfile"
+buildName: "springboot-webmvc"
+codeReview: false
+links:
+  Git: "https://github.com/arcadioMartin/springboot-webmvc.git"
+  Job: "http://jenkins.vagrant.f8/job/springboot-webmvc"
+  Staging: "http://172.30.193.226:80/kubernetes/pods?namespace=default-staging"
+  Testing: "http://172.30.193.226:80/kubernetes/pods?namespace=default-testing"
+environments:
+  Testing: "default-testing"
+  Staging: "default-staging"

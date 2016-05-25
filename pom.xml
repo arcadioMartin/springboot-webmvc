@@ -22,6 +22,8 @@
     <docker.from>fabric8/java-jboss-openjdk8-jdk:1.0.10</docker.from>
     <fabric8.dockerUser>fabric8/</fabric8.dockerUser>
     <docker.image>${fabric8.dockerUser}${project.artifactId}:${project.version}</docker.image>
+    <fabric8.label.project>springboot-webmvc</fabric8.label.project>
+    <fabric8.label.version>${project.version}</fabric8.label.version>
 
     <fabric8.service.name>${project.artifactId}</fabric8.service.name>
     <fabric8.service.port>80</fabric8.service.port>
